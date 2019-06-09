@@ -1,0 +1,12 @@
+{
+  "facebook": {
+    "api_key": "2332976630311405",
+    "api_secret": "beff1d49ef33995f35c1cd8c3416e633",
+    "callback_url": "http://localhost:8000/auth/facebook/callback",
+    "use_database": true,
+    "host": "localhost",
+    "username": "root",
+    "password": "123456",
+    "database": "dbname"
+  }
+}
