@@ -25,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
     );
 
     Video.associate = function (models) {
-        Video.hasMany(models.GameCategory, { as: 'categories', foreignKey: 'categoryId' });
         Video.hasMany(models.Tag, { as: 'tags', foreignKey: 'tagId' });
     };
 

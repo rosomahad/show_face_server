@@ -21,7 +21,8 @@ const {
 const router = express.Router();
 
 router
-    .get('/', accessMiddleware, async (req, res, next) => {
+
+    .post('/:id/videos', accessMiddleware, async (req, res, next) => {
         const query = getListQuery(req);
 
         try {
@@ -59,6 +60,29 @@ router
             } else {
                 throw new NotFoundError();
             }
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/', accessMiddleware, async (req, res, next) => {
+        const query = getListQuery(req);
+
+        try {
+            const result = await User.findAndCountAll(query);
+
+            return res.json({
+                data: {
+                    rows: result.rows,
+                    total: result.count,
+                    limit: query.limit,
+                    offset: query.offset,
+                    page: Math.floor(query.offset / query.limit),
+                },
+                status: 'success',
+                code: 200
+            });
+
         } catch (err) {
             next(err);
         }

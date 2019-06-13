@@ -487,3 +487,188 @@ TypeError: Router.use() requires a middleware function but got a Object
 2019-06-09 15:32:14 [32minfo[39m: 	Listening on port 8000 
 2019-06-09 15:32:30 [32minfo[39m: 	Listening on port 8000 
 2019-06-09 15:33:02 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:42:24 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:42:26 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:42:27 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:42:47 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:50:35 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:50:57 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:51:17 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:51:32 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:52:06 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:53:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:53:15 [32minfo[39m: 	Listening on port 8000 
+2019-06-09 21:54:11 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 17:54:40 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 18:00:10 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 18:00:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 18:00:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 18:01:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 18:03:51 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 21:58:41 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 21:59:52 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:00:13 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:00:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:01:56 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:02:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:02:49 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:03:30 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:03:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:04:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:08:06 [32minfo[39m: 	Listening on port 8000 
+2019-06-10 22:09:01 [32minfo[39m: 	Listening on port 8000 
+2019-06-11 16:05:58 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 20:34:10 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:22:21 [31merror[39m: 	uncaughtException: WebSocket is not defined
+ReferenceError: WebSocket is not defined
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:60:13)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3) {"error":{},"stack":"ReferenceError: WebSocket is not defined\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:60:13)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)\n    at startup (internal/bootstrap/node.js:236:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)","exception":true,"date":"Thu Jun 13 2019 00:22:21 GMT+0300 (GMT+03:00)","process":{"pid":17058,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":63422464,"heapTotal":44388352,"heapUsed":27224024,"external":189688}},"os":{"loadavg":[3.4208984375,3.14208984375,2.669921875],"uptime":728096},"trace":[{"column":13,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js","function":null,"line":60,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":63,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/app.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":742,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":236,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":560,"method":null,"native":false}]}
+2019-06-12 21:25:29 [31merror[39m: 	uncaughtException: sockets is not defined
+ReferenceError: sockets is not defined
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:62:12)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3) {"error":{},"stack":"ReferenceError: sockets is not defined\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:62:12)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)\n    at startup (internal/bootstrap/node.js:236:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)","exception":true,"date":"Thu Jun 13 2019 00:25:29 GMT+0300 (GMT+03:00)","process":{"pid":17274,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":60768256,"heapTotal":61689856,"heapUsed":26735432,"external":130866}},"os":{"loadavg":[3.6484375,3.548828125,2.94677734375],"uptime":728284},"trace":[{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js","function":null,"line":62,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":63,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/app.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":742,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":236,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":560,"method":null,"native":false}]}
+2019-06-12 21:25:30 [31merror[39m: 	uncaughtException: sockets is not defined
+ReferenceError: sockets is not defined
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:62:12)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3) {"error":{},"stack":"ReferenceError: sockets is not defined\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js:62:12)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/app.js:1:63)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)\n    at startup (internal/bootstrap/node.js:236:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)","exception":true,"date":"Thu Jun 13 2019 00:25:30 GMT+0300 (GMT+03:00)","process":{"pid":17283,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":63897600,"heapTotal":61165568,"heapUsed":26346200,"external":107674}},"os":{"loadavg":[3.6484375,3.548828125,2.94677734375],"uptime":728285},"trace":[{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/server.js","function":null,"line":62,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":63,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/app.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":742,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":236,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":560,"method":null,"native":false}]}
+2019-06-12 21:27:01 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:27:34 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:27:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:33:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:33:34 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:39:11 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:44:16 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:44:32 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:46:00 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:46:47 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:46:48 [31merror[39m: 	uncaughtException: fns[i] is not a function
+TypeError: fns[i] is not a function
+    at run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:124:11)
+    at Namespace.run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:136:3)
+    at Namespace.add (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:164:8)
+    at Client.doConnect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:97:20)
+    at Client.connect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:66:17)
+    at Server.onconnection (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:435:10)
+    at Server.emit (events.js:182:13)
+    at Server.handshake (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:338:8)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:232:12
+    at Server.checkRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:76:51)
+    at Server.verify (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:168:17)
+    at Server.handleRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:222:8)
+    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:466:14)
+    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:343:16)
+    at Server.emit (events.js:182:13)
+    at parserOnIncoming (_http_server.js:658:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17) {"error":{},"stack":"TypeError: fns[i] is not a function\n    at run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:124:11)\n    at Namespace.run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:136:3)\n    at Namespace.add (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:164:8)\n    at Client.doConnect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:97:20)\n    at Client.connect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:66:17)\n    at Server.onconnection (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:435:10)\n    at Server.emit (events.js:182:13)\n    at Server.handshake (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:338:8)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:232:12\n    at Server.checkRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:76:51)\n    at Server.verify (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:168:17)\n    at Server.handleRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:222:8)\n    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:466:14)\n    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:343:16)\n    at Server.emit (events.js:182:13)\n    at parserOnIncoming (_http_server.js:658:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)","exception":true,"date":"Thu Jun 13 2019 00:46:48 GMT+0300 (GMT+03:00)","process":{"pid":18619,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":67014656,"heapTotal":65650688,"heapUsed":25669576,"external":59036}},"os":{"loadavg":[1.62841796875,1.92724609375,2.27978515625],"uptime":729563},"trace":[{"column":11,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"run","line":124,"method":null,"native":false},{"column":3,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"Namespace.run","line":136,"method":"run","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"Namespace.add","line":164,"method":"add","native":false},{"column":20,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js","function":"Client.doConnect","line":97,"method":"doConnect","native":false},{"column":17,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js","function":"Client.connect","line":66,"method":"connect","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":"Server.onconnection","line":435,"method":"onconnection","native":false},{"column":13,"file":"events.js","function":"Server.emit","line":182,"method":"emit","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.handshake","line":338,"method":"handshake","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":null,"line":232,"method":null,"native":false},{"column":51,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":"Server.checkRequest","line":76,"method":"checkRequest","native":false},{"column":17,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.verify","line":168,"method":"verify","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.handleRequest","line":222,"method":"handleRequest","native":false},{"column":14,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":null,"line":466,"method":null,"native":false},{"column":16,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":null,"line":343,"method":null,"native":false},{"column":13,"file":"events.js","function":"Server.emit","line":182,"method":"emit","native":false},{"column":12,"file":"_http_server.js","function":"parserOnIncoming","line":658,"method":null,"native":false},{"column":17,"file":"_http_common.js","function":"HTTPParser.parserOnHeadersComplete","line":109,"method":"parserOnHeadersComplete","native":false}]}
+2019-06-12 21:47:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:48:36 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:49:20 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:51:55 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:53:03 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:53:06 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:53:25 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:53:41 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:54:05 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:54:24 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:54:48 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:55:03 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:55:25 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:55:30 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:56:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:56:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:56:40 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:57:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 21:57:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 22:10:06 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 22:10:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 22:10:15 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 22:59:37 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:02:00 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:02:05 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:04:42 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:07:51 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:09:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:10:34 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:10:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:12:48 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:15:15 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:15:18 [31merror[39m: 	uncaughtException: Cannot read property 'find' of undefined
+TypeError: Cannot read property 'find' of undefined
+    at Socket.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:24:67)
+    at Socket.emit (events.js:182:13)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12
+    at process._tickCallback (internal/process/next_tick.js:61:11) {"error":{},"stack":"TypeError: Cannot read property 'find' of undefined\n    at Socket.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:24:67)\n    at Socket.emit (events.js:182:13)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12\n    at process._tickCallback (internal/process/next_tick.js:61:11)","exception":true,"date":"Thu Jun 13 2019 02:15:18 GMT+0300 (GMT+03:00)","process":{"pid":23875,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":66039808,"heapTotal":64077824,"heapUsed":22543584,"external":72230}},"os":{"loadavg":[3.9716796875,3.1875,2.89453125],"uptime":734873},"trace":[{"column":67,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":null,"line":24,"method":null,"native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":null,"line":528,"method":null,"native":false},{"column":11,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":61,"method":"_tickCallback","native":false}]}
+2019-06-12 23:15:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-12 23:16:28 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:51:09 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:54:45 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:54:55 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:56:44 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:56:50 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:56:55 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 12:57:30 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 13:13:05 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 13:13:09 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 13:25:45 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:48:53 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:51:18 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:56:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:57:01 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:58:01 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 19:58:10 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:00:07 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:00:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:00:43 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:00:56 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:00:57 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:01:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:03:35 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:03:44 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:05:16 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:05:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 20:05:24 [32minfo[39m: 	Listening on port 8000 

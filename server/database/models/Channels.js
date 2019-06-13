@@ -19,10 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     );
 
     Channel.associate = function (models) {
-        // Channel.hasOne(models.User, { as: 'creator' });
-
-        Channel.hasMany(models.Video, { as: 'videos', foreignKey: 'videoId' });
-        Channel.hasMany(models.User, { as: 'subscribers', foreignKey: 'subscriberId' });
+        Channel.hasOne(models.User, { as: 'creator', foreignKey: 'creatorId' });
     };
 
     return Channel;

@@ -27,9 +27,9 @@ const sequelize = new Sequelize(config.database, config.username, config.passwor
   operatorsAliases: Op,
 });
 
-sequelize.sync({
-  force: true
-});
+// sequelize.sync({
+//   force: true
+// });
 
 fs
   .readdirSync(MODELS_DIR)

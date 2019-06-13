@@ -15,7 +15,7 @@ const router = express.Router();
 
 
 router
-    .post('/login', async (req, res) => {
+    .post('/sign_in', async (req, res) => {
         const { email, password } = req.body;
 
         if (!email || !password) {
@@ -32,39 +32,23 @@ router
 
         if (isValid) {
 
-            var payload = { id: user.id };
+            req.session.authorized = true;
 
-            var token = getToken(payload);
+            req.session.user = user;
 
             res.json({
                 status: 'success',
-                token: token,
+                data: {
+                    user,
+                    isAuth: true
+                },
             });
         } else {
             res.status(401).json({ message: 'Passwords did not match' });
         }
     })
 
-    .post('/logout', authCheck, async (req, res) => {
-        req.session.destroy();
-        res.json({
-            status: 'success',
-            message: 'Logged out!',
-        });
-    })
-
-    .post('/authorized', async (req, res, next) => {
-        if (req.session.authorized && req.session.user) {
-            return res.json({
-                authorized: req.session.authorized,
-                isAdmin: req.session.user.isAdmin,
-            });
-        }
-
-        next(new ForbiddenError());
-    })
-
-    .post('/registration', async (req, res, next) => {
+    .post('/sign_up', async (req, res, next) => {
         const values = req.body;
 
         try {
@@ -78,6 +62,29 @@ router
         } catch (err) {
             next(err);
         }
+    })
+
+    .post('/logout', authCheck, async (req, res) => {
+        req.session.destroy();
+
+        res.json({
+            status: 'success',
+            message: 'Logged out!',
+        });
+    })
+
+    .get('/is_authorized', async (req, res, next) => {
+        if (req.session.authorized && req.session.user) {
+            return res.json({
+                status: 'success',
+                data: {
+                    use: req.session.user,
+                    isAuth: true
+                },
+            });
+        }
+
+        next(new ForbiddenError());
     });
 
 module.exports = router;

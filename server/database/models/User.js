@@ -18,6 +18,12 @@ module.exports = (sequelize, DataTypes) => {
 				require: true,
 			},
 
+			nickName: {
+				type: DataTypes.STRING,
+				unique: true,
+				require: true,
+			},
+
 			logoUrl: {
 				type: DataTypes.STRING,
 				defaultValue: '',
@@ -47,7 +53,6 @@ module.exports = (sequelize, DataTypes) => {
 			phone: {
 				type: DataTypes.STRING,
 				uniq: true,
-				allowNull: false
 			},
 
 			lastSignInAt: {

@@ -56,10 +56,6 @@ const app = express();
 
 const server = http.Server(app);
 
-const io = sockets(server);
-
-socketManager.init(io);
-
 app.use(express.json());
 
 const storageDir = path.join(__dirname, 'storage');
@@ -82,6 +78,10 @@ if (production) {
 
 app.use(session(sessionConfig));
 
+const io = sockets(server);
+
+socketManager.init(io);
+
 app.use(passport.initialize());
 
 app.use(passport.session());
@@ -89,7 +89,6 @@ app.use(passport.session());
 app.use(loggerMiddleware);
 
 api(app);
-
 
 app.use(express.static(path.resolve(__dirname, '../client/')));
 
