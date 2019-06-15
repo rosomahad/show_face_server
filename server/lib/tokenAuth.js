@@ -1,39 +1,17 @@
-const JwtStrategy = require('passport-jwt').Strategy;
-const ExtractJwt = require('passport-jwt').ExtractJwt;
 const jwt = require('jsonwebtoken');
 
-const {
-    User,
-} = require('../database');
+const SECRET_KEY = 'SECRET_KEY_2019';
 
-const opts = {
-    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: '7x0jhxt"9(thpX6',
+const verifyToken = (token, callback) => {
+    jwt.verify(token, SECRET_KEY, callback);
+
 };
 
-
-const passport = require('passport');
-
-passport.use(new JwtStrategy(opts, async (jwt_payload, done) => {
-    try {
-        const profile = await User.findByPk(jwt_payload.id);
-
-        if (profile) {
-            return done(null, profile);
-        } else {
-            return done(null, false);
-        }
-    } catch (err) {
-        return done(err, false);
-    }
-}));
-
-const getToken = (payload) => jwt.sign(payload, opts.secretOrKey);
-
-const authCheck = passport.authenticate('jwt', { session: false });
+const getToken = ({ userId }) => {
+    return jwt.sign({ userId }, SECRET_KEY);
+};
 
 module.exports = {
-    jwtPassport: passport,
-    getToken,
-    authCheck,
+    verifyToken,
+    getToken
 };

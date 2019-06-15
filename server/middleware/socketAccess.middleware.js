@@ -1,12 +1,21 @@
-const isValid = () => true;
+const { verifyToken } = require('../lib/tokenAuth');
 
 module.exports = (socket, next) => {
-    // let token = socket.handshake.query.token;
 
-    if (isValid()) {
-        console.log('socket');
-        return next();
+    const token = socket.handshake.query && socket.handshake.query.token;
+
+    if (token) {
+
+        verifyToken(socket.handshake.query.token, function (err, decoded) {
+            if (err) return next(new Error('Authentication error'));
+
+            socket.userId = decoded.userId;
+
+            next();
+        });
+
+    } else {
+        next(new Error('Authentication error'));
     }
-
-    return next(new Error('authentication error'));
 };
+

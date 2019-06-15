@@ -1,19 +1,53 @@
-
+const { Video } = require('../database');
 
 module.exports = {
-    findById: (id) => {
+    findById: async (id) => {
+        try {
+            const result = await Video.findByPk(id);
 
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    findByQuery: (query) => {
+    create: async (values) => {
+        try {
+            const result = await Video.create(values);
 
+            return result;
+
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    create: (channelId) => {
+    updateById: async (id, values) => {
+        try {
+            const result = await Video.update(values, {
+                where: {
+                    id
+                }
+            });
 
+            return result;
+
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    deleteById: (id) => {
+    deleteById: async (id) => {
+        try {
+            const result = await Video.destroy({
+                where: {
+                    id
+                }
+            });
 
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 };

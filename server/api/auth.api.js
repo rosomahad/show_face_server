@@ -1,12 +1,13 @@
 // import express from 'express';
 const express = require('express');
-const { getToken, authCheck } = require('../lib/tokenAuth');
+const { getToken } = require('../lib/tokenAuth');
 
 const {
     User,
 } = require('../database');
 
 const { validPassword } = require('../lib/passwordBcrypt');
+
 const {
     ForbiddenError,
 } = require('../lib/errors');
@@ -31,15 +32,19 @@ router
         const isValid = await validPassword(password, user.passwordHash);
 
         if (isValid) {
+            const token = getToken({ userId: user.id });
 
             req.session.authorized = true;
 
             req.session.user = user;
 
+            req.session.token = token;
+
             res.json({
                 status: 'success',
                 data: {
                     user,
+                    token,
                     isAuth: true
                 },
             });
@@ -64,7 +69,7 @@ router
         }
     })
 
-    .post('/logout', authCheck, async (req, res) => {
+    .post('/logout', async (req, res) => {
         req.session.destroy();
 
         res.json({
@@ -78,7 +83,8 @@ router
             return res.json({
                 status: 'success',
                 data: {
-                    use: req.session.user,
+                    token: req.session.token,
+                    user: req.session.user,
                     isAuth: true
                 },
             });

@@ -1,19 +1,53 @@
-
+const { Chat } = require('../database');
 
 module.exports = {
-    findById: (id) => {
+    findById: async (id) => {
+        try {
+            const result = await Chat.findByPk(id);
 
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    create: (data) => {
+    create: async (values) => {
+        try {
+            const result = await Chat.create(values);
 
+            return result;
+
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    updateById: (id, data) => {
+    updateById: async (id, values) => {
+        try {
+            const result = await Chat.update(values, {
+                where: {
+                    id
+                }
+            });
 
+            return result;
+
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 
-    deleteById: (id) => {
+    deleteById: async (id) => {
+        try {
+            const result = await Chat.destroy({
+                where: {
+                    id
+                }
+            });
 
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
     },
 };

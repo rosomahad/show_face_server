@@ -4,6 +4,7 @@ const chatsController = require('./chats.controller');
 const videosController = require('./videos.controller');
 const socketsController = require('./sockets.controller');
 const messagesController = require('./messages.controller');
+const channelsController = require('./channels.controller');
 
 module.exports = {
     tagsController,
@@ -12,4 +13,5 @@ module.exports = {
     videosController,
     socketsController,
     messagesController,
+    channelsController,
 };

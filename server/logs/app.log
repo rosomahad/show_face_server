@@ -672,3 +672,175 @@ TypeError: Cannot read property 'find' of undefined
 2019-06-13 20:05:16 [32minfo[39m: 	Listening on port 8000 
 2019-06-13 20:05:22 [32minfo[39m: 	Listening on port 8000 
 2019-06-13 20:05:24 [32minfo[39m: 	Listening on port 8000 
+2019-06-13 21:35:02 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 08:42:33 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 10:33:49 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:26:10 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:26:53 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:30:40 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:32:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:32:25 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:32:28 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:32:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:34:11 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:34:30 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:34:41 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:34:58 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:35:06 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:35:39 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:41:50 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:42:34 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:44:27 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:48:08 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 11:49:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:09:51 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:14:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:25:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:25:40 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:25:57 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:34:50 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:34:52 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:40:18 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:40:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:40:25 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:40:44 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:44:19 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 12:55:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:14:02 [31merror[39m: 	uncaughtException: Cannot set property 'channelId' of undefined
+TypeError: Cannot set property 'channelId' of undefined
+    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)
+    at Socket.emit (events.js:182:13)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12
+    at process._tickCallback (internal/process/next_tick.js:61:11) {"error":{},"stack":"TypeError: Cannot set property 'channelId' of undefined\n    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)\n    at Socket.emit (events.js:182:13)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12\n    at process._tickCallback (internal/process/next_tick.js:61:11)","exception":true,"date":"Fri Jun 14 2019 16:14:02 GMT+0300 (GMT+03:00)","process":{"pid":20411,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":41578496,"heapTotal":29474816,"heapUsed":24839592,"external":402172}},"os":{"loadavg":[2.3125,2.599609375,2.74462890625],"uptime":25610},"trace":[{"column":36,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":"Socket.socket.on.on.on.on","line":31,"method":"on","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":null,"line":528,"method":null,"native":false},{"column":11,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":61,"method":"_tickCallback","native":false}]}
+2019-06-14 13:14:51 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:17:17 [31merror[39m: 	uncaughtException: Cannot set property 'channelId' of undefined
+TypeError: Cannot set property 'channelId' of undefined
+    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)
+    at Socket.emit (events.js:182:13)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12
+    at process._tickCallback (internal/process/next_tick.js:61:11) {"error":{},"stack":"TypeError: Cannot set property 'channelId' of undefined\n    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)\n    at Socket.emit (events.js:182:13)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12\n    at process._tickCallback (internal/process/next_tick.js:61:11)","exception":true,"date":"Fri Jun 14 2019 16:17:17 GMT+0300 (GMT+03:00)","process":{"pid":21395,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":49582080,"heapTotal":29474816,"heapUsed":24563088,"external":409867}},"os":{"loadavg":[3.80078125,3.15380859375,2.93701171875],"uptime":25805},"trace":[{"column":36,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":"Socket.socket.on.on.on.on","line":31,"method":"on","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":null,"line":528,"method":null,"native":false},{"column":11,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":61,"method":"_tickCallback","native":false}]}
+2019-06-14 13:18:52 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:19:39 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:24:39 [31merror[39m: 	uncaughtException: Cannot set property 'channelId' of undefined
+TypeError: Cannot set property 'channelId' of undefined
+    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)
+    at Socket.emit (events.js:182:13)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12
+    at process._tickCallback (internal/process/next_tick.js:61:11) {"error":{},"stack":"TypeError: Cannot set property 'channelId' of undefined\n    at Socket.socket.on.on.on.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:31:36)\n    at Socket.emit (events.js:182:13)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:528:12\n    at process._tickCallback (internal/process/next_tick.js:61:11)","exception":true,"date":"Fri Jun 14 2019 16:24:39 GMT+0300 (GMT+03:00)","process":{"pid":21649,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":49950720,"heapTotal":29999104,"heapUsed":24695792,"external":509953}},"os":{"loadavg":[3.7197265625,3.48193359375,3.1962890625],"uptime":26247},"trace":[{"column":36,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":"Socket.socket.on.on.on.on","line":31,"method":"on","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":null,"line":528,"method":null,"native":false},{"column":11,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":61,"method":"_tickCallback","native":false}]}
+2019-06-14 13:33:42 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:54:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:54:36 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:55:05 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:55:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:57:51 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:58:07 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 13:58:58 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 14:00:09 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 14:01:45 [32minfo[39m: 	Listening on port 8000 
+2019-06-14 14:01:49 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 07:18:46 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 07:19:18 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:09:19 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:09:25 [31merror[39m: 	uncaughtException: SECRET_SOCKET_KEY is not defined
+ReferenceError: SECRET_SOCKET_KEY is not defined
+    at verifyToken (/Users/danil/Desktop/dan_ros/my/show_face_server/server/lib/tokenAuth.js:6:23)
+    at Array.module.exports (/Users/danil/Desktop/dan_ros/my/show_face_server/server/middleware/socketAccess.middleware.js:9:9)
+    at run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:124:11)
+    at Namespace.run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:136:3)
+    at Namespace.add (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:164:8)
+    at Client.doConnect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:97:20)
+    at Client.connect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:66:17)
+    at Server.onconnection (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:435:10)
+    at Server.emit (events.js:182:13)
+    at Server.handshake (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:338:8)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:232:12
+    at Server.checkRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:76:51)
+    at Server.verify (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:168:17)
+    at Server.handleRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:222:8)
+    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:466:14)
+    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:343:16)
+    at Server.emit (events.js:182:13)
+    at parserOnIncoming (_http_server.js:658:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17) {"error":{},"stack":"ReferenceError: SECRET_SOCKET_KEY is not defined\n    at verifyToken (/Users/danil/Desktop/dan_ros/my/show_face_server/server/lib/tokenAuth.js:6:23)\n    at Array.module.exports (/Users/danil/Desktop/dan_ros/my/show_face_server/server/middleware/socketAccess.middleware.js:9:9)\n    at run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:124:11)\n    at Namespace.run (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:136:3)\n    at Namespace.add (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:164:8)\n    at Client.doConnect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:97:20)\n    at Client.connect (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:66:17)\n    at Server.onconnection (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:435:10)\n    at Server.emit (events.js:182:13)\n    at Server.handshake (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:338:8)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:232:12\n    at Server.checkRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:76:51)\n    at Server.verify (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:168:17)\n    at Server.handleRequest (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:222:8)\n    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js:466:14)\n    at Server.<anonymous> (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js:343:16)\n    at Server.emit (events.js:182:13)\n    at parserOnIncoming (_http_server.js:658:12)\n    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)","exception":true,"date":"Sat Jun 15 2019 11:09:25 GMT+0300 (GMT+03:00)","process":{"pid":28787,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":62631936,"heapTotal":62504960,"heapUsed":29532512,"external":736620}},"os":{"loadavg":[1.90869140625,2.2109375,2.22802734375],"uptime":93733},"trace":[{"column":23,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/lib/tokenAuth.js","function":"verifyToken","line":6,"method":null,"native":false},{"column":9,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/middleware/socketAccess.middleware.js","function":"Array.module.exports","line":9,"method":"exports","native":false},{"column":11,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"run","line":124,"method":null,"native":false},{"column":3,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"Namespace.run","line":136,"method":"run","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"Namespace.add","line":164,"method":"add","native":false},{"column":20,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js","function":"Client.doConnect","line":97,"method":"doConnect","native":false},{"column":17,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js","function":"Client.connect","line":66,"method":"connect","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":"Server.onconnection","line":435,"method":"onconnection","native":false},{"column":13,"file":"events.js","function":"Server.emit","line":182,"method":"emit","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.handshake","line":338,"method":"handshake","native":false},{"column":12,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":null,"line":232,"method":null,"native":false},{"column":51,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":"Server.checkRequest","line":76,"method":"checkRequest","native":false},{"column":17,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.verify","line":168,"method":"verify","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":"Server.handleRequest","line":222,"method":"handleRequest","native":false},{"column":14,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/server.js","function":null,"line":466,"method":null,"native":false},{"column":16,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/index.js","function":null,"line":343,"method":null,"native":false},{"column":13,"file":"events.js","function":"Server.emit","line":182,"method":"emit","native":false},{"column":12,"file":"_http_server.js","function":"parserOnIncoming","line":658,"method":null,"native":false},{"column":17,"file":"_http_common.js","function":"HTTPParser.parserOnHeadersComplete","line":109,"method":"parserOnHeadersComplete","native":false}]}
+2019-06-15 08:09:44 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:11:10 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:11:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:21:43 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:36:13 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:36:21 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:38:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 08:39:16 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:20:26 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:22:18 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:22:23 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:22:26 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:22:35 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:22:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:23:22 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:23:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:24:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:25:11 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:26:56 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:34:47 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:36:24 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:37:14 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:37:53 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:37:53 [31merror[39m: 	uncaughtException: this.connections.push is not a function
+TypeError: this.connections.push is not a function
+    at Namespace.io.sockets.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:17:30)
+    at Namespace.emit (events.js:182:13)
+    at Namespace.emit (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:213:10)
+    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:181:14
+    at process._tickCallback (internal/process/next_tick.js:61:11) {"error":{},"stack":"TypeError: this.connections.push is not a function\n    at Namespace.io.sockets.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:17:30)\n    at Namespace.emit (events.js:182:13)\n    at Namespace.emit (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:213:10)\n    at /Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js:181:14\n    at process._tickCallback (internal/process/next_tick.js:61:11)","exception":true,"date":"Sat Jun 15 2019 15:37:53 GMT+0300 (GMT+03:00)","process":{"pid":35908,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":63410176,"heapTotal":43106304,"heapUsed":31396104,"external":993884}},"os":{"loadavg":[5.193359375,4.43115234375,4.1044921875],"uptime":109841},"trace":[{"column":30,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":"Namespace.io.sockets.on","line":17,"method":"on","native":false},{"column":13,"file":"events.js","function":"Namespace.emit","line":182,"method":"emit","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":"Namespace.emit","line":213,"method":"emit","native":false},{"column":14,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/namespace.js","function":null,"line":181,"method":null,"native":false},{"column":11,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":61,"method":"_tickCallback","native":false}]}
+2019-06-15 12:41:04 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:41:41 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:43:17 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:43:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:43:35 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:45:13 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:45:17 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:45:43 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:45:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:46:20 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:46:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:46:34 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:46:41 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:47:08 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:47:12 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:49:00 [31merror[39m: 	uncaughtException: this.connections.indexOf is not a function
+TypeError: this.connections.indexOf is not a function
+    at Socket.socket.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:21:50)
+    at Socket.emit (events.js:182:13)
+    at Socket.emit (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:142:10)
+    at Socket.onclose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:454:8)
+    at Client.onclose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:254:24)
+    at Socket.emit (events.js:187:15)
+    at Socket.onClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/socket.js:318:10)
+    at Object.onceWrapper (events.js:273:13)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.Transport.onClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/transport.js:127:8)
+    at Object.onceWrapper (events.js:273:13)
+    at WebSocket.emit (events.js:182:13)
+    at WebSocket.emitClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js:180:10)
+    at Socket.socketOnClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js:805:15)
+    at Socket.emit (events.js:182:13)
+    at TCP._handle.close (net.js:598:12) {"error":{},"stack":"TypeError: this.connections.indexOf is not a function\n    at Socket.socket.on (/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js:21:50)\n    at Socket.emit (events.js:182:13)\n    at Socket.emit (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:142:10)\n    at Socket.onclose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js:454:8)\n    at Client.onclose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js:254:24)\n    at Socket.emit (events.js:187:15)\n    at Socket.onClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/socket.js:318:10)\n    at Object.onceWrapper (events.js:273:13)\n    at WebSocket.emit (events.js:182:13)\n    at WebSocket.Transport.onClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/transport.js:127:8)\n    at Object.onceWrapper (events.js:273:13)\n    at WebSocket.emit (events.js:182:13)\n    at WebSocket.emitClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js:180:10)\n    at Socket.socketOnClose (/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js:805:15)\n    at Socket.emit (events.js:182:13)\n    at TCP._handle.close (net.js:598:12)","exception":true,"date":"Sat Jun 15 2019 15:49:00 GMT+0300 (GMT+03:00)","process":{"pid":36471,"uid":504,"gid":20,"cwd":"/Users/danil/Desktop/dan_ros/my/show_face_server","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/Users/danil/Desktop/dan_ros/my/show_face_server/app.js"],"memoryUsage":{"rss":48168960,"heapTotal":28426240,"heapUsed":22955416,"external":96953}},"os":{"loadavg":[5.69287109375,4.14404296875,3.9931640625],"uptime":110508},"trace":[{"column":50,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/server/controllers/sockets.controller.js","function":"Socket.socket.on","line":21,"method":"on","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":"Socket.emit","line":142,"method":"emit","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/socket.js","function":"Socket.onclose","line":454,"method":"onclose","native":false},{"column":24,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/socket.io/lib/client.js","function":"Client.onclose","line":254,"method":"onclose","native":false},{"column":15,"file":"events.js","function":"Socket.emit","line":187,"method":"emit","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/socket.js","function":"Socket.onClose","line":318,"method":"onClose","native":false},{"column":13,"file":"events.js","function":"Object.onceWrapper","line":273,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WebSocket.emit","line":182,"method":"emit","native":false},{"column":8,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/lib/transport.js","function":"WebSocket.Transport.onClose","line":127,"method":"onClose","native":false},{"column":13,"file":"events.js","function":"Object.onceWrapper","line":273,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WebSocket.emit","line":182,"method":"emit","native":false},{"column":10,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js","function":"WebSocket.emitClose","line":180,"method":"emitClose","native":false},{"column":15,"file":"/Users/danil/Desktop/dan_ros/my/show_face_server/node_modules/engine.io/node_modules/ws/lib/websocket.js","function":"Socket.socketOnClose","line":805,"method":"socketOnClose","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":12,"file":"net.js","function":"TCP._handle.close","line":598,"method":"close","native":false}]}
+2019-06-15 12:49:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 12:56:32 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:20:19 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:29:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:31:40 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:39:42 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:46:19 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:53:47 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:53:54 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 13:55:46 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:04:08 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:11:52 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:11:56 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:25:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:38:31 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:44:29 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:44:53 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 14:54:38 [32minfo[39m: 	Listening on port 8000 
+2019-06-15 22:35:54 [32minfo[39m: 	Listening on port 8000 

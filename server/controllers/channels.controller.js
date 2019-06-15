@@ -1,9 +1,9 @@
-const { Tag } = require('../database');
+const { Channel } = require('../database');
 
 module.exports = {
     findById: async (id) => {
         try {
-            const result = await Tag.findByPk(id);
+            const result = await Channel.findByPk(id);
 
             return result;
         } catch (error) {
@@ -11,9 +11,11 @@ module.exports = {
         }
     },
 
-    create: async (values) => {
+    create: async (creatorId, values) => {
         try {
-            const result = await Tag.create(values);
+            const result = await Channel.create(values);
+
+            result.addCreator(creatorId);
 
             return result;
 
@@ -24,7 +26,7 @@ module.exports = {
 
     updateById: async (id, values) => {
         try {
-            const result = await Tag.update(values, {
+            const result = await Channel.update(values, {
                 where: {
                     id
                 }
@@ -39,7 +41,7 @@ module.exports = {
 
     deleteById: async (id) => {
         try {
-            const result = await Tag.destroy({
+            const result = await Channel.destroy({
                 where: {
                     id
                 }
