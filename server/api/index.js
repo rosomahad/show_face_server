@@ -4,7 +4,7 @@ const usersApi = require('./users.api');
 const chatsApi = require('./chats.api');
 const videosApi = require('./videos.api');
 const messagesApi = require('./messages.api');
-const channelsApi = require('./messages.api');
+const channelsApi = require('./channels.api');
 
 module.exports = function (server) {
 	server.use('/api/v1/auth', authApi);

@@ -14,10 +14,15 @@ const router = express.Router();
 router
     .get('/', accessMiddleware, async (req, res, next) => {
         try {
-            // TODO: 
+            const { rows, count } = await channelsController.findByQuery();
+
             res.json({
                 status: 'error',
-                code: 200
+                code: 200,
+                data: {
+                    rows,
+                    count
+                }
             });
         } catch (err) {
             next(err);
@@ -51,7 +56,7 @@ router
         const user = req.session.user;
 
         try {
-            if (!user || !userId) {
+            if (!user) {
                 throw new WrongParametersError();
             }
 

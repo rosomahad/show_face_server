@@ -1,6 +1,16 @@
 const { Channel } = require('../database');
 
 module.exports = {
+    findByQuery: async (query) => {
+        try {
+            const result = await Channel.findAndCountAll();
+
+            console.log(result);
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
     findById: async (id) => {
         try {
             const result = await Channel.findByPk(id);
