@@ -7,6 +7,8 @@ package-lock.json
 # testing
 /coverage
 
+/logs
+
 # production
 /server/database/config/config.json
 

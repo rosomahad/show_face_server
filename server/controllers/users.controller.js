@@ -53,4 +53,45 @@ module.exports = {
             throw new Error(error);
         }
     },
+
+    addFriend: async (userId, friendId) => {
+        try {
+
+            const user = User.findByPk(userId);
+
+            await user.addFriend(friendId);
+
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
+
+    findFriendsByQuery: async (userId, query = {}) => {
+        try {
+
+            const user = User.findByPk(userId);
+
+            const result = {
+                rows: await user.getFriends(),
+                count: await user.countFriends(),
+            };
+
+            return result;
+
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
+
+    removeFriend: async (userId, friendId) => {
+        try {
+
+            const user = User.findByPk(userId);
+
+            await user.removeFriend(friendId);
+
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
 };

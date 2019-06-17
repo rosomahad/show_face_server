@@ -45,10 +45,10 @@ Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }
-  switch (modelName) {
+  // switch (modelName) {
 
-    case 'Message': db[modelName].sync({ force: true });
-  }
+  //   case 'Message': db[modelName].sync({ force: true });
+  // }
 });
 
 db.sequelize = sequelize;

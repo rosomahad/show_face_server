@@ -15,7 +15,8 @@ const {
 } = require('../lib/querySelectors');
 
 const {
-    NotFoundError
+    NotFoundError,
+    ForbiddenError
 } = require('../lib/errors.js');
 
 const router = express.Router();
@@ -60,6 +61,68 @@ router
             } else {
                 throw new NotFoundError();
             }
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .post('/:userId/friends/:friendId', accessMiddleware, async (req, res, next) => {
+        try {
+            const userId = req.params.userId;
+
+            const friendId = req.params.friendId;
+
+            const sessionUserId = req.session.user.id;
+
+            if (Number(userId) !== Number(sessionUserId)) { throw new ForbiddenError(); }
+
+            await usersController.addFriend(userId, friendId);
+
+            res.json({
+                status: 'success',
+                code: 200
+            });
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .delete('/:userId/friends/:friendId', accessMiddleware, async (req, res, next) => {
+        try {
+            const userId = req.params.userId;
+
+            const friendId = req.params.friendId;
+
+            const sessionUserId = req.session.user.id;
+
+            if (Number(userId) !== Number(sessionUserId)) { throw new ForbiddenError(); }
+
+            await usersController.removeFriend(userId, friendId);
+
+            res.json({
+                status: 'success',
+                code: 200
+            });
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/:userId/friends', accessMiddleware, async (req, res, next) => {
+        try {
+            const userId = req.params.userId;
+
+            const friendId = req.params.friendId;
+
+            await usersController.removeFriend(userId, friendId);
+
+            res.json({
+                status: 'success',
+                code: 200
+            });
+
         } catch (err) {
             next(err);
         }
