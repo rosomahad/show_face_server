@@ -15,11 +15,15 @@ module.exports = (sequelize, DataTypes) => {
             description: {
                 type: DataTypes.STRING,
             },
+
+            avatarUrl: {
+                type: DataTypes.STRING,
+            },
         },
     );
 
     Channel.associate = function (models) {
-        Channel.hasOne(models.User, { as: 'creator', foreignKey: 'creatorId' });
+        Channel.belongsTo(models.User, { as: 'creator', foreignKey: 'creatorId' });
     };
 
     return Channel;

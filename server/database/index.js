@@ -45,11 +45,10 @@ Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
   }
-  // switch (modelName) {
-  // case 'OrderProduct':
-  // case 'Customer':
-  // case 'Customer': db[modelName].sync({ force: true });
-  // }
+  switch (modelName) {
+
+    case 'Message': db[modelName].sync({ force: true });
+  }
 });
 
 db.sequelize = sequelize;

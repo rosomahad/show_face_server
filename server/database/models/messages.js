@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const ChatMessage = sequelize.define('ChatMessage',
+    const Message = sequelize.define('Message',
         {
             id: {
                 type: DataTypes.BIGINT,
@@ -11,13 +11,19 @@ module.exports = (sequelize, DataTypes) => {
             message: {
                 type: DataTypes.STRING,
             },
+
+
         },
+        {
+            timestamps: true,
+        }
     );
 
-    ChatMessage.associate = function (models) {
-        ChatMessage.hasOne(models.User, { as: 'user', foreignKey: 'userId' });
-        // ChatMessage.hasOne(models.Chat);
+    Message.associate = function (models) {
+        Message.belongsTo(models.User, { as: 'creator', });
+
+        Message.belongsTo(models.Channel, { as: 'channel', });
     };
 
-    return ChatMessage;
+    return Message;
 };

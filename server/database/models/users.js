@@ -18,15 +18,15 @@ module.exports = (sequelize, DataTypes) => {
 				require: true,
 			},
 
+			avatarUrl: {
+				type: DataTypes.STRING,
+				require: true,
+			},
+
 			nickName: {
 				type: DataTypes.STRING,
 				unique: true,
 				require: true,
-			},
-
-			logoUrl: {
-				type: DataTypes.STRING,
-				defaultValue: '',
 			},
 
 			description: {
@@ -62,34 +62,15 @@ module.exports = (sequelize, DataTypes) => {
 			passwordHash: {
 				type: DataTypes.STRING,
 			},
-
-			// signInCount: {
-			// 	type: DataTypes.INTEGER,
-			// 	defaultValue: 0,
-			// 	allowNull: false,
-			// 	validate: {
-			// 		isInt: {
-			// 			msg: 'Signin count must be integer'
-			// 		}
-			// 	}
-			// },
-
-			// currentSignInAt: {
-			// 	type: DataTypes.DATE,
-			// },
-
-			// isAdmin: {
-			// 	type: DataTypes.BOOLEAN,
-			// }
 		},
 	);
 
 	User.associate = function (models) {
-		// User.hasOne(models.Channel);
 
-		User.hasMany(models.User, { as: 'friends', foreignKey: 'friendId' });
-		User.hasMany(models.Video, { as: 'favorites', foreignKey: 'favoriteId' });
-		// User.hasMany(models.Channel, { as: 'subscriptions', foreignKey: 'subscriptionId' });
+		User.hasMany(models.User, { as: 'friends' });
+
+		User.hasMany(models.Chat, { as: 'chats' });
+
 	};
 
 	User.prototype.toJSON = function () {

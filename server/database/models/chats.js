@@ -15,8 +15,11 @@ module.exports = (sequelize, DataTypes) => {
     );
 
     Chat.associate = function (models) {
-        Chat.hasOne(models.Video);
-        Chat.hasMany(models.ChatMessage, { as: 'messages', foreignKey: 'messageId' });
+
+        Chat.hasMany(models.Message, { as: 'messages' });
+
+        Chat.hasMany(models.User, { as: 'members' });
+
     };
 
     return Chat;

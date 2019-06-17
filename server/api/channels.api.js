@@ -2,6 +2,7 @@ const express = require('express');
 
 const accessMiddleware = require('../middleware/access.middleware');
 const { channelsController } = require('../controllers');
+const { messagesController } = require('../controllers');
 
 
 const {
@@ -29,11 +30,62 @@ router
         }
     })
 
-    .get('/:id', accessMiddleware, async (req, res, next) => {
-        const id = req.params.id;
+    .get('/:channelId', accessMiddleware, async (req, res, next) => {
+        const id = req.params.channelId;
 
         try {
             const result = await channelsController.findById(id);
+
+            if (result) {
+                res.json({
+                    data: result,
+                    status: 'success',
+                    code: 200
+                });
+            } else {
+                throw new NotFoundError();
+            }
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/:channelId/messages', accessMiddleware, async (req, res, next) => {
+        const channelId = req.params.channelId;
+
+        try {
+            const result = await messagesController.findByChannelId(channelId);
+
+            if (result) {
+                res.json({
+                    data: result,
+                    status: 'success',
+                    code: 200
+                });
+            } else {
+                throw new NotFoundError();
+            }
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .post('/:channelId/messages', accessMiddleware, async (req, res, next) => {
+        const channelId = req.params.channelId;
+
+        const values = req.body;
+        const user = req.session.user;
+
+        try {
+            const result = await
+                messagesController
+                    .createByChannelId({
+                        channelId,
+                        userId: user.id,
+                        values
+                    });
 
             if (result) {
                 res.json({
