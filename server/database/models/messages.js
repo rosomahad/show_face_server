@@ -23,6 +23,8 @@ module.exports = (sequelize, DataTypes) => {
         Message.belongsTo(models.User, { as: 'creator', });
 
         Message.belongsTo(models.Channel, { as: 'channel', });
+
+        Message.belongsTo(models.Chat, { as: 'chat', });
     };
 
     return Message;

@@ -6,6 +6,8 @@ const {
     NotFoundError
 } = require('../lib/errors.js');
 
+const { messagesController, chatsController } = require('../controllers');
+
 const router = express.Router();
 
 router
@@ -22,6 +24,47 @@ router
 
         try {
             // TODO: 
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/:chatId/messages', accessMiddleware, async (req, res, next) => {
+        const chatId = req.params.chatId;
+
+        try {
+            const { rows, count } = await messagesController.findByChatId(chatId);
+
+            res.json({
+                status: 'success',
+                data: {
+                    rows,
+                    count,
+                }
+            });
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .post('/:chatId/messages', accessMiddleware, async (req, res, next) => {
+        const chatId = req.params.chatId;
+        const userId = req.session.user.id;
+        const values = req.body;
+
+        try {
+            const message = await messagesController.createByChatId({
+                chatId,
+                userId,
+                values
+            });
+
+            res.json({
+                status: 'success',
+                data: message
+            });
+
         } catch (err) {
             next(err);
         }

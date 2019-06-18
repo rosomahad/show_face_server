@@ -1,4 +1,4 @@
-const { Message, Channel, User } = require('../database');
+const { Message, Channel, User, Chat } = require('../database');
 
 module.exports = {
     findById: async (id) => {
@@ -36,6 +36,30 @@ module.exports = {
         }
     },
 
+    createByChatId: async ({
+        chatId,
+        userId,
+        values
+    }) => {
+        try {
+            const chat = await Chat.findByPk(chatId);
+
+            const user = await User.findByPk(userId);
+
+            if (!chat || !user) throw new Error('');
+
+            const message = await Message.create(values);
+
+            message.setChat(chat);
+
+            message.setCreator(user);
+
+            return message;
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
+
     findByChannelId: async (channelId) => {
         try {
             const result = await Message.findAndCountAll({
@@ -49,6 +73,34 @@ module.exports = {
                         as: 'channel',
                         attributes: ['id', 'name']
                     },
+                    {
+                        model: User,
+                        as: 'creator',
+                        attributes: ['id', 'fullName']
+                    },
+                ]
+            });
+
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
+    },
+
+    findByChatId: async (chatId) => {
+        try {
+            const result = await Message.findAndCountAll({
+                where: {
+                    chatId,
+                },
+
+                include: [
+                    {
+                        model: Chat,
+                        as: 'chat',
+                        attributes: ['id']
+                    },
+
                     {
                         model: User,
                         as: 'creator',

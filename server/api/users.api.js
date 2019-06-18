@@ -5,7 +5,8 @@ const {
 } = require('../database');
 
 const {
-    usersController
+    usersController,
+    chatsController
 } = require('../controllers');
 
 const accessMiddleware = require('../middleware/access.middleware');
@@ -37,6 +38,53 @@ router
                     offset: query.offset,
                     page: Math.floor(query.offset / query.limit),
                 },
+                status: 'success',
+                code: 200
+            });
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/:userId/chats', accessMiddleware, async (req, res, next) => {
+        try {
+
+            const { userId } = req.params;
+
+            const sessionUserId = req.session.user.id;
+
+            if (+sessionUserId !== +userId) throw new ForbiddenError();
+
+            const result = await chatsController.findByUserId(userId);
+
+            return res.json({
+                data: {
+                    rows: result.rows,
+                    total: result.count,
+                },
+            });
+
+        } catch (err) {
+            next(err);
+        }
+    })
+
+    .get('/:first_member_id/users/:second_member_id/chats', accessMiddleware, async (req, res, next) => {
+
+        try {
+            const { first_member_id: firstMemberId, second_member_id: secondMemberId } = req.params;
+
+            const sessionUserId = req.session.id;
+
+            if (sessionUserId !== firstMemberId && secondMemberId !== secondMemberId) {
+                throw ForbiddenError();
+            }
+
+            const result = await chatsController.findByMembersOrCreate(firstMemberId, secondMemberId);
+
+            return res.json({
+                data: result,
                 status: 'success',
                 code: 200
             });

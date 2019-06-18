@@ -16,9 +16,9 @@ module.exports = (sequelize, DataTypes) => {
 
     Chat.associate = function (models) {
 
-        Chat.hasMany(models.Message, { as: 'messages' });
+        Chat.belongsTo(models.User, { as: 'firstMember', primaryKey: 'firstMemberId' });
 
-        Chat.hasMany(models.User, { as: 'members' });
+        Chat.belongsTo(models.User, { as: 'secondMember', primaryKey: 'secondMemberId' });
 
     };
 
