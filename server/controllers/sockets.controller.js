@@ -37,7 +37,7 @@ class SocketEvents {
                     const connections =
                         this.findUsersByChannelId(socket.channelId)
                             .filter((usr) => usr.userId !== userId);
-                    console.log('Sender id: ', socket.userId);
+
                     this.emit({
                         name: 'channel_ice_candidate_connected',
                         data: iceCandidate,
@@ -48,7 +48,7 @@ class SocketEvents {
                 .on('channel_client_sdp', ({ sdp }) => {
                     const connections = this.findUsersByChannelId(socket.channelId)
                         .filter((usr) => usr.userId !== socket.userId);
-                    console.log('Sender id: ', socket.userId);
+
                     this.emit({
                         name: 'channel_client_sdp',
                         data: { sdp, userId: socket.userId, channelId: socket.channelId },
@@ -59,7 +59,7 @@ class SocketEvents {
                 .on('channel_client_candidate', ({ candidate }) => {
                     const connections = this.findUsersByChannelId(socket.channelId)
                         .filter((usr) => usr.userId !== socket.userId);
-                    console.log('Sender id: ', socket.userId);
+
                     this.emit({
                         name: 'channel_client_candidate',
                         data: { candidate, userId: socket.userId, channelId: socket.channelId },
@@ -70,7 +70,7 @@ class SocketEvents {
                 .on('channel_client_answer', ({ sdp }) => {
                     const connections = this.findUsersByChannelId(socket.channelId)
                         .filter((usr) => usr.userId !== socket.userId);
-                    console.log('Sender id: ', socket.userId);
+
 
                     this.emit({
                         name: 'channel_client_answer',
@@ -85,8 +85,6 @@ class SocketEvents {
     }
 
     emit({ name, data, connections = this.connections }) {
-        console.log('receiver ids: ', connections.map(({ userId }) => userId));
-
         connections.forEach((socket) => {
             socket.emit(name, data);
         });

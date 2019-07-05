@@ -27,7 +27,6 @@ module.exports = {
     findByMembersOrCreate: async (senderId, receiverId) => {
 
         try {
-            if (+senderId === +receiverId) throw new WrongParametersError({ client_message: 'Can\'t create chat for the same users' });
 
             const query = {
                 where: {

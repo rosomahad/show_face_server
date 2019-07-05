@@ -69,7 +69,7 @@ module.exports = (sequelize, DataTypes) => {
 
 		User.belongsToMany(models.User, {
 			as: 'friends',
-			through: 'friendship',
+			through: 'Friendship',
 			foreignKey: 'userId',
 			otherKey: 'friendId'
 		});
